@@ -1,0 +1,39 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #FFEB7C;
+
+    font-family: "Bitcount Grid Double", system-ui;
+}
+
+nav {
+    display: flex;
+}
+
+#nav-bar {
+    width: 250px;
+    padding: 20px 0 20px 0;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+#nav-strip {
+    background-color: #2A1804;
+    width: 5px;
+    height: 100vh;
+}
+
+.nav-button {
+    color: #FFEB7C;
+    font-size: 35px;
+
+    background-color:#2A1804;    
+    height: 55px;
+    border-radius: 0 20px 20px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
