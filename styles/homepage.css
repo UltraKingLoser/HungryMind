@@ -1,9 +1,9 @@
 body {
+    display: flex;
     padding: 0;
     margin: 0;
     background-color: #FFEB7C;
-
-    font-family: "Bitcount Grid Double", system-ui;
+    height: 100vh;
 }
 
 nav {
@@ -22,10 +22,10 @@ nav {
 #nav-strip {
     background-color: #2A1804;
     width: 5px;
-    height: 100vh;
 }
 
 .nav-button {
+    font-family: "Bitcount Grid Double", system-ui;
     color: #FFEB7C;
     font-size: 35px;
 
@@ -36,4 +36,31 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.nav-button:hover{
+    opacity: 50%;
+}
+
+#blog-links {
+    --background-color: lightpink;
+    width: 1000px;
+    padding: 40px 40px 40px 40px;
+}
+
+.blog-link {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.blog-title {
+    font-size: 35px;
+}
+
+.blog-date {
+    font-size: 14px;
+}
+
+.blog-description {
+    font-size: 22px;
 }
