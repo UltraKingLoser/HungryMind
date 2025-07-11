@@ -1,37 +1,41 @@
+:root{
+    --banana-black: #290d0d;
+}
+
 body {
     display: flex;
     padding: 0;
     margin: 0;
-    background-color: #FFEB7C;
-    height: 100vh;
+    padding-top: 90px;
 }
 
+p{
+    margin: 0;
+}
+
+/*Nav Buttons*/
 nav {
     display: flex;
-}
-
-#nav-bar {
-    width: 250px;
-    padding: 20px 0 20px 0;
-
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-}
-
-#nav-strip {
-    background-color: #2A1804;
-    width: 5px;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    height: 60px;
+    border: 5px solid black;
+    border-radius: 50px;
+    background-color: white;
 }
 
 .nav-button {
-    font-family: "Bitcount Grid Double", system-ui;
-    color: #FFEB7C;
+    font-family: "Roboto";
+    color: black;
     font-size: 35px;
-
-    background-color:#2A1804;    
-    height: 55px;
-    border-radius: 0 20px 20px 0;
+ 
+    height: 100%;
+    width: 200px;
+    padding: 0 20px;
 
     display: flex;
     align-items: center;
@@ -40,27 +44,52 @@ nav {
 
 .nav-button:hover{
     opacity: 50%;
+    background-color: grey;
 }
 
-#blog-links {
-    --background-color: lightpink;
-    width: 1000px;
-    padding: 40px 40px 40px 40px;
+.left-button{
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
 }
 
-.blog-link {
-    color: black;
-    font-family: 'Courier New', Courier, monospace;
+.right-button{
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
-.blog-title {
+/*Main content*/
+#main-content-container{
+    padding: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    flex: 1;
+}
+
+#projects-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid black;
+    border-radius: 20px;
+}
+
+#about-me-container{
+    
+}
+
+.separator{
+    height: 5px;
+    width: 200px;
+    background-color: black;
+}
+
+/*under construction*/
+.under-construction-image{
+    width: 250px;
+}
+
+.under-construction-text{
     font-size: 35px;
-}
-
-.blog-date {
-    font-size: 14px;
-}
-
-.blog-description {
-    font-size: 22px;
 }
