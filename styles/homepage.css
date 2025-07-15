@@ -1,95 +1,70 @@
-:root{
-    --banana-black: #290d0d;
+.content-container{
+    align-self: center;
+    width: 1450px;
+    padding: 20px;
 }
 
-body {
+.heading{
     display: flex;
-    padding: 0;
-    margin: 0;
-    padding-top: 90px;
+    justify-content: center;
+    font-size: 35px;
+    color: var(--heading-text-color);
 }
 
-p{
-    margin: 0;
+#main-content-container{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    row-gap: 20px;
 }
 
-/*Nav Buttons*/
-nav {
+.content{
+    margin-top: 15px;
+}
+
+#project-card-container{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translate(-50%);
-    height: 60px;
-    border: 5px solid black;
-    border-radius: 50px;
-    background-color: white;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    row-gap: 50px;
 }
 
-.nav-button {
-    font-family: "Roboto";
-    color: black;
-    font-size: 35px;
- 
-    height: 100%;
-    width: 200px;
-    padding: 0 20px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.project-card{
+    background-color: var(--card-bg-color);
+    width: 450px;
+    min-width: 450px;
+    height: 600px;
+    border-radius: var(--card-border-radius);
+    box-shadow: 5px 5px 20px black;
 }
 
-.nav-button:hover{
-    opacity: 50%;
-    background-color: grey;
-}
-
-.left-button{
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
-}
-
-.right-button{
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-}
-
-/*Main content*/
-#main-content-container{
+.project-card-body{
     padding: 20px;
-    
     display: flex;
     flex-direction: column;
     row-gap: 10px;
-    flex: 1;
 }
 
-#projects-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 5px solid black;
-    border-radius: 20px;
+.project-card-title{
+    font-size: 26px;
+    color: var(--heading-text-color)
 }
 
-#about-me-container{
-    
+.project-card-date{
+    font-size: 10px;
+    padding-left: 10px;
 }
 
-.separator{
-    height: 5px;
-    width: 200px;
-    background-color: black;
+.project-card-description{
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 10px;
 }
 
-/*under construction*/
-.under-construction-image{
-    width: 250px;
-}
-
-.under-construction-text{
-    font-size: 35px;
+.project-card-image{
+    width: 450px;
+    border-top-left-radius: var(--card-border-radius);
+    border-top-right-radius: var(--card-border-radius);
+    border-bottom: 2px solid var(--main-color);
 }

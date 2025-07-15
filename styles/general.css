@@ -1,0 +1,27 @@
+:root{
+    --card-bg-color: #2B232D;
+    --bg-color: #3E3340;
+    --card-border-radius: 8px;
+    --body-displacement: 200px;
+    --heading-text-color: #5F8267;
+    --main-color: #c0c0c0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter";
+    font-weight: 200;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--main-color);
+    padding-left: var(--body-displacement);
+}
+
+footer{
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+}

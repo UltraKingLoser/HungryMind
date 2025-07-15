@@ -5,38 +5,63 @@
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
+        <link rel='stylesheet' href='./styles/general.css'>
         <link rel='stylesheet' href='./styles/homepage.css'>
+        <link rel='stylesheet' href='./styles/nav.css'>
         <script src="/scripts/homepage.js" defer></script>
     </head>
     <body>
         <nav>
-            <div class="nav-button left-button">
-                Projects
-            </div>
-            <div class="nav-button middle-button">
-                About Me
-            </div>
-            <div class="nav-button right-button">
-                Contact Me
-            </div>
+            <a href="./index.html" class="nav-button">
+                PROJECT PORTFOLIO
+            </a>
+            <a href="./about-me.html" class="nav-button">
+                ABOUT ME
+            </a>
         </nav>
         <div id="main-content-container">
-            <div id="projects-container">
-                <img src="./images/under-construction.png" alt="under construction image" class="under-construction-image">
-                <p class="under-construction-text">Under Construction</p>
-            </div>
-            <div class="separator"></div>
-            <div id="about-me-container">
-                <p class="heading">About Me</p>
-                <p class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <div class="separator"></div>
-            <div id="contact-me-container">
-                <p class="heading">Contact Me</p>
-                <p class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="content-container">
+                <p id="projects-heading" class="heading">PROJECT PORTFOLIO</p>
+                <div id="project-card-container" class="content">
+                    <div class="project-card">
+                        <img class="project-card-image" src="./images/testbanner.jpg" alt="testbanner">
+                        <div class="project-card-body">
+                            <p class="project-card-title">Title</p>
+                            <p class="project-card-date">10/10/2020</p>
+                            <p class="project-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img class="project-card-image" src="./images/testbanner.jpg" alt="testbanner">
+                        <div class="project-card-body">
+                            <p class="project-card-title">Title</p>
+                            <p class="project-card-date">10/10/2020</p>
+                            <p class="project-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img class="project-card-image" src="./images/testbanner.jpg" alt="testbanner">
+                        <div class="project-card-body">
+                            <p class="project-card-title">Title</p>
+                            <p class="project-card-date">10/10/2020</p>
+                            <p class="project-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img class="project-card-image" src="./images/testbanner.jpg" alt="testbanner">
+                        <div class="project-card-body">
+                            <p class="project-card-title">Title</p>
+                            <p class="project-card-date">10/10/2020</p>
+                            <p class="project-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        <footer>
+            Last Updated: 15/07/2025
+        </footer>
     </body>
 </html>

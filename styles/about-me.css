@@ -1,0 +1,25 @@
+:root{
+    --personal-photo-size: 250px;
+    --personal-photo-radius: calc(var(--personal-photo-size)/2);
+}
+
+#main-content-container{
+    display: flex;
+    justify-content: center;
+
+    flex: 1;
+}
+
+#content-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1400px;
+    padding: 20px;
+}
+
+#personal-photo{
+    width: var(--personal-photo-size);
+    height: var(--personal-photo-size);
+    border-radius: var(--personal-photo-radius);
+}
