@@ -18,10 +18,21 @@ body{
     background-color: var(--bg-color);
     color: var(--main-color);
     padding-left: var(--body-displacement);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
+.heading{
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    color: var(--heading-text-color);
+}
+
+
 footer{
-    margin: 15px 0;
+    padding: 15px 0;
     display: flex;
     justify-content: center;
 }

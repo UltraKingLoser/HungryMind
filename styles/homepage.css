@@ -4,13 +4,6 @@
     padding: 20px;
 }
 
-.heading{
-    display: flex;
-    justify-content: center;
-    font-size: 35px;
-    color: var(--heading-text-color);
-}
-
 #main-content-container{
     display: flex;
     flex-direction: column;
@@ -37,6 +30,7 @@
     height: 600px;
     border-radius: var(--card-border-radius);
     box-shadow: 5px 5px 20px black;
+    cursor: pointer;
 }
 
 .project-card-body{
